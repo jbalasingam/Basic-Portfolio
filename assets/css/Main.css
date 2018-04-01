@@ -1,8 +1,22 @@
 /*General Structure of the Page-----------------------------------------------------------------*/
+/*this allows for the sticky footer, using flex*/
+html, body {
+    height: 100%;
+    margin:0px; 
+    padding:0px;
+}
+  
+body {
+    display: flex;
+    flex-direction: column;
+}
+
 .content {
     width: 960px;
     float: center;
     margin: auto;
+    overflow: auto;
+    flex: 1 0 auto;
 }
 
 
@@ -88,21 +102,19 @@ margin-bottom:-20px;
 
 /* styling for the footer*/
 
-div.footer {
-    position:absolute;
+.footer {
     background-color: #666666;
     height: 60px;
-    left: 0;
-    right:0;
-    bottom:-70%;
     border-top: 5px solid #4aaaa5;
+    flex-shrink: 0;
+    text-align: center;
+    margin-top: 20px;
 }
 
 .copyright{
     position:relative;
     bottom:-30px;
     font-size: 18px;
-    text-align: center;
 }
 
 
@@ -114,50 +126,3 @@ img {
     width: 271px;
 }
 
-/*About Page Formatting-----------------------------------------------------------------------*/
-p.text {
-    margin-top:0px;
-    color: #777777;
-    font-family: Arial, Helvetica, sans-serif;
-    padding: 25px;
-    }
-
-
-/*Contact Page Formatting-----------------------------------------------------------------------*/
-input[type=text], select {
-    width: 100%;
-    padding: 12px 3px;
-    margin: 8px 0;
-    display: inline-block;
-    border: 1px solid #ccc;
-    border-radius: 0px;
-    box-sizing: border-box;
-    
-}
-
-form {
-    margin-top: 15px;
-    color: #777777;
-    font-family: Arial, Helvetica, sans-serif;
-    }
-/*this is the formatting for the message box in the form*/
-#message {
-    margin-top:10px;
-    width:955px;
-    height:150px;
-    border-color: #ccc;
-}
-
-/*submit button formatting*/
-input[type=submit] {
-    width: 115px;
-    height: 41px;
-    background-color: #4aaaa5;
-    color: white;
-    border:none;
-    font-family: Arial, Helvetica, sans-serif;
-    cursor:pointer;
-    font-size:20px;
-}
-
-/*Portfolio Page Formatting--------------------------------------------------------------------*/
