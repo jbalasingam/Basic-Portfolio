@@ -1,0 +1,62 @@
+body {
+    background-image: url("background.png");
+}
+
+.content {
+    max-width: 960px;
+    float: center;
+    margin: auto;
+}
+
+
+header {
+    background-color: #ffffff;
+}
+
+.top {
+    float: left;
+}
+
+span.links {
+    float: right;
+    text-align: center;
+}
+
+.top {
+    display: inline-block;
+    color: #333;
+    text-align: center;
+    padding: 14px 16px;
+}
+
+
+
+
+div.main {
+    background-color:#ffffff;
+    width: 960px;
+    border-color: #cccccc;
+    border-width: 1px;
+    
+
+}
+
+
+
+div.footer {
+    background-color: #666666;
+    width: 1400px;
+    height: 60px;
+    float: center;
+    position: absolute;
+    left: 0;
+    top: 100%;
+    width: 100%;
+    text-align: center;
+    font-size: 18px;
+}
+
+div.copyright{
+    position:relative;
+    bottom:-30px;
+}
